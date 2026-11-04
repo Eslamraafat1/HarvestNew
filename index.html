@@ -5,9 +5,44 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Harvest</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Harvest British College | English Diplomas &amp; Courses in Dokki, Giza</title>
+  <meta name="description" content="Harvest British College in Dokki, Giza: English Language diplomas, Kidzy courses for children, TEFL and TOEFL preparation, with Cambridge-accredited certificates.">
+  <meta name="theme-color" content="#000000">
+  <link rel="canonical" href="https://eslamraafat1.github.io/HarvestNew/">
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Harvest British College">
+  <meta property="og:title" content="Harvest British College | English Diplomas &amp; Courses in Dokki, Giza">
+  <meta property="og:description" content="English Language diplomas, Kidzy courses, TEFL and TOEFL preparation, accredited by Cambridge Training College Britain.">
+  <meta property="og:url" content="https://eslamraafat1.github.io/HarvestNew/">
+  <meta property="og:image" content="https://eslamraafat1.github.io/HarvestNew/assets/img/hero-carousel/5.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Harvest British College",
+    "url": "https://harvestcollege.co.uk/",
+    "logo": "https://eslamraafat1.github.io/HarvestNew/assets/img/edu/logo.png",
+    "email": "info@harvestcollege.co.uk",
+    "telephone": ["19545", "+201020034000"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Villa 4, Dr. Soliman Square, Mossadeq St., Dokki",
+      "addressLocality": "Giza",
+      "addressRegion": "Giza Governorate",
+      "addressCountry": "EG"
+    },
+    "sameAs": [
+      "https://www.facebook.com/harvestbritishcollege",
+      "https://www.instagram.com/harvestcollege/",
+      "https://www.tiktok.com/@harvestcollege",
+      "https://www.linkedin.com/company/harvest-british-college/"
+    ]
+  }
+  </script>
 
   <!-- Favicons -->
   <link href="assets/img/edu/logo.png" rel="icon">
@@ -40,40 +75,22 @@
   <header id="header" class="header d-flex align-items-center">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/edu/logo.png"  alt="">
+      <a href="#hero" class="logo d-flex align-items-center">
+        <img src="assets/img/edu/logo.png" alt="Harvest British College logo">
           <h1 class="harvee">  Harvest<span>.</span></h1>
       </a>
 
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list" role="button" tabindex="0" aria-label="Open menu"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x" role="button" tabindex="0" aria-label="Close menu"></i>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="">About</a> </li>
-          <li><a href="">Services</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i
-                class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                    class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#get-started">About</a></li>
+          <li><a href="#constructions">Curriculum</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Offers</a></li>
+          <li><a href="#testimonials">Team</a></li>
+          <li><a href="#recent-blog-posts">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -104,10 +121,10 @@
       <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/3.jpeg)"></div>
       <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/4.jpeg)"></div>
 
-      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev" aria-label="Previous slide">
         <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
       </a>
-      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next" aria-label="Next slide">
         <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
       </a>
     </div>
@@ -133,33 +150,37 @@
           </div>
 
           <div class="col-lg-5" data-aos="fade">
-            <form action="forms/quote.php" method="post" class="php-email-form">
+            <form id="enquiry-form" class="php-email-form" novalidate>
               <h3>Our Vision</h3>
               <p>Harvest College is the perfect Educational Institution for the ambitious and driven Individual. We offer a wide range of Courses in Language Teaching, Cultural Studies, and more!</p>
               <div class="row gy-3">
 
                 <div class="col-md-12">
-                  <input type="text" name="name" class="form-control" placeholder="Name" required>
+                  <label for="enquiry-name" class="visually-hidden">Name</label>
+                  <input type="text" id="enquiry-name" name="name" class="form-control" placeholder="Name" autocomplete="name" required minlength="2">
                 </div>
 
                 <div class="col-md-12 ">
-                  <input type="email" class="form-control" name="email" placeholder="Email" required>
+                  <label for="enquiry-email" class="visually-hidden">Email</label>
+                  <input type="email" id="enquiry-email" class="form-control" name="email" placeholder="Email" autocomplete="email" required>
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="phone" placeholder="Phone" required>
+                  <label for="enquiry-phone" class="visually-hidden">Phone</label>
+                  <input type="tel" id="enquiry-phone" class="form-control" name="phone" placeholder="Phone" autocomplete="tel" required pattern="[+0-9 ()-]{7,20}">
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                  <label for="enquiry-message" class="visually-hidden">Message</label>
+                  <textarea id="enquiry-message" class="form-control" name="message" rows="6" placeholder="Message" required minlength="10"></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your quote request has been sent successfully. Thank you!</div>
+                  <div class="error-message" role="alert"></div>
+                  <div class="sent-message" role="status">Your email app should now open with your enquiry addressed to info@harvestcollege.co.uk. If it doesn't, call us on <a href="tel:19545">19545</a>.</div>
 
-                  <button type="submit">Get a quote</button>
+                  <button type="submit">Send enquiry by email</button>
+                  <p class="form-note mt-3 mb-0 small">This opens your email app. You can also call <a href="tel:19545">19545</a> or <a href="tel:+201020034000">01020034000</a>.</p>
                 </div>
 
               </div>
@@ -267,7 +288,7 @@
               
               <div class="icon">
                 <!-- <i class="fa-solid fa-mountain-city"></i> -->
-                  <img class="onephoto" src="assets/img/edu/30.PNG" alt="">
+                  <img class="onephoto" src="assets/img/edu/30.PNG" alt="English Diploma, Level by Level">
               </div>
               <br>
               <br>
@@ -279,7 +300,7 @@
 
                 <p  >Level by Level &emsp13;&emsp13;&emsp13;  &emsp13;&emsp13;&emsp13;&emsp13;&emsp13;  <span>490 EGP</span>   </p>
               </div>
-              <a href="" class="readmore stretched-link">Learn more <i
+              <a href="#get-started" class="readmore stretched-link">Learn more <i
                   class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
@@ -288,7 +309,7 @@
             <div class="service-item position-relative">
               <div class="icon">
                 <!-- <i class="fa-solid fa-arrow-up-from-ground-water"></i> -->
-                <img src="assets/img/edu/40.PNG" alt="">
+                <img src="assets/img/edu/40.PNG" alt="English Diploma, True Beginners">
               </div>
               <br>
               <br>
@@ -298,7 +319,7 @@
               <h3>English Diploma</h3>
               <p class="level" >True Beginners Diploma &emsp13;&emsp13;&emsp13;  &emsp13;&emsp13;&emsp13;&emsp13;&emsp13;  <span>550 EGP</span>   </p>
               
-              <a href="" class="readmore stretched-link">Learn more <i
+              <a href="#get-started" class="readmore stretched-link">Learn more <i
                   class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
@@ -307,7 +328,7 @@
             <div class="service-item position-relative">
               <div class="icon">
                 <!-- <i class="fa-solid fa-compass-drafting"></i> -->
-                <img src="assets/img/edu/50.PNG" alt="">
+                <img src="assets/img/edu/50.PNG" alt="English Diploma, VIP Service">
               </div>
               <br>
               <br>
@@ -317,7 +338,7 @@
               <h3>English Diploma</h3>
               
               <p class="level" >VIP Service 1 Level. &emsp13;&emsp13;&emsp13;  &emsp13;&emsp13;&emsp13;&emsp13;&emsp13;  <span>2200 EGP</span>   </p>
-              <a href="" class="readmore stretched-link">Learn more <i
+              <a href="#get-started" class="readmore stretched-link">Learn more <i
                   class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
@@ -326,7 +347,7 @@
             <div class="service-item position-relative">
               <div class="icon">
                 <!-- <i class="fa-solid fa-trowel-bricks"></i> -->
-                <img src="assets/img/edu/60.PNG" alt="">
+                <img src="assets/img/edu/60.PNG" alt="Kidzy Diploma 1">
 
               </div>
               <br>
@@ -336,7 +357,7 @@
               <br>
               <h3>Kidzy Diploma</h3>
               <p class="level" >Kidzy Diploma 1 &emsp13;&emsp13;&emsp13;  &emsp13;&emsp13;&emsp13;&emsp13;&emsp13;  <span>2200 EGP</span>   </p>
-              <a href="" class="readmore stretched-link">Learn more <i
+              <a href="#get-started" class="readmore stretched-link">Learn more <i
                   class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
@@ -345,7 +366,7 @@
             <div class="service-item position-relative">
               <div class="icon">
                 <!-- <i class="fa-solid fa-trowel-bricks"></i> -->
-                <img src="assets/img/edu/70.PNG" alt="">
+                <img src="assets/img/edu/70.PNG" alt="Kidzy Diploma 2">
 
               </div>
               <br>
@@ -355,7 +376,7 @@
               <br>
               <h3>Kidzy Diploma</h3>
               <p class="level" >Kidzy Diploma 2 &emsp13;&emsp13;&emsp13;  &emsp13;&emsp13;&emsp13;&emsp13;&emsp13;  <span>2200 EGP</span>   </p>
-              <a href="" class="readmore stretched-link">Learn more <i
+              <a href="#get-started" class="readmore stretched-link">Learn more <i
                   class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
@@ -364,7 +385,7 @@
             <div class="service-item position-relative">
               <div class="icon">
                 <!-- <i class="fa-solid fa-trowel-bricks"></i> -->
-                <img src="assets/img/edu/80.PNG" alt="">
+                <img src="assets/img/edu/80.PNG" alt="English Mini Diploma, 4 Levels">
 
               </div>
               <br>
@@ -374,7 +395,7 @@
               <br>
               <h3>English Diploma</h3>
               <p class="level" >mini Diploma  &emsp13;&emsp13;&emsp13;  &emsp13;&emsp13;&emsp13;&emsp13;&emsp13;  <span>1960 EGP</span>   </p>
-              <a href="" class="readmore stretched-link">Learn more <i
+              <a href="#get-started" class="readmore stretched-link">Learn more <i
                   class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
@@ -455,7 +476,8 @@
           <li class="nav-item col-3">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
               <h4>Our Gallery</h4>
-            </a><!-- End tab nav item -->
+            </a>
+          </li><!-- End tab nav item -->
 
           <li class="nav-item col-3">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
@@ -488,7 +510,7 @@
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
-                <img src="assets/img/edu/140.jpg" alt="" class="img-fluid">
+                <img src="assets/img/edu/140.jpg" alt="Cambridge Training College Britain certificate" class="img-fluid">
               </div>
             </div>
           </div><!-- End tab content item -->
@@ -508,7 +530,7 @@
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/edu/110.jpg" alt="" class="img-fluid w-75">
+                <img src="assets/img/edu/110.jpg" alt="Harvest British College students" class="img-fluid w-75">
               </div>
             </div>
           </div><!-- End tab content item -->
@@ -527,7 +549,7 @@
                 </p>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/edu/150.jpg" alt="" class="img-fluid">
+                <img src="assets/img/edu/150.jpg" alt="Harvest British College graduation" class="img-fluid">
               </div>
             </div>
           </div><!-- End tab content item -->
@@ -546,7 +568,7 @@
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/edu/170.PNG" alt="" class="img-fluid">
+                <img src="assets/img/edu/170.PNG" alt="Harvest portfolio and clients" class="img-fluid">
               </div>
             </div>
           </div><!-- End tab content item -->
@@ -562,7 +584,7 @@
 
         <div class="section-header">
           <h2 id="Hurry">Hurry up</h2>
-          <p>Browse the offers that are about to expire</p>
+          <p>Current courses and recent offers. Prices are as published by the college in early 2023.</p>
         </div>
 
         <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry"
@@ -570,184 +592,178 @@
 
           <ul class="portfolio-flters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-remodeling">offers</li>
-            <li data-filter=".filter-construction">Harvest Diploma</li>
-            <li data-filter=".filter-repairs">Kids</li>
-            <li data-filter=".filter-design">English Diploma</li>
+            <li data-filter=".filter-offers">Offers</li>
+            <li data-filter=".filter-harvest-diploma">Harvest Diploma</li>
+            <li data-filter=".filter-kids">Kids</li>
+            <li data-filter=".filter-english-diploma">English Diploma</li>
           </ul><!-- End Projects Filters -->
 
           <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-offers">
               <div class="portfolio-content h-100">
-                <img src="assets/img/edu/1.PNG" class="img-fluid" alt="">
+                <img src="assets/img/edu/1.PNG" class="img-fluid" alt="Feb Offer: 3 Levels (Single)">
                 <div class="portfolio-info">
-                  <h4>Remodeling 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/edu/1.PNG" title="Remodeling 1"
-                    data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link "><i
-                      class="bi bi-zoom-in"></i></a>
-                  <a href="" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+                  <h4>Feb Offer: 3 Levels (Single)</h4>
+                  <p>990 EGP instead of 1470 EGP · expired 28 Feb 2023</p>
+                  <a href="assets/img/edu/1.PNG" title="Feb Offer: 3 Levels (Single)" data-gallery="portfolio-gallery-offers"
+                    class="glightbox preview-link" aria-label="View Feb Offer: 3 Levels (Single)"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#get-started" title="Enquire about this course" class="details-link" aria-label="Enquire about Feb Offer: 3 Levels (Single)"><i
+                      class="bi bi-envelope"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-harvest-diploma">
               <div class="portfolio-content h-100">
-                <img src="assets/img/edu/4.PNG" class="img-fluid" alt="">
+                <img src="assets/img/edu/4.PNG" class="img-fluid" alt="Feb Offer: 18 Levels (All Inclusive)">
                 <div class="portfolio-info">
-                  <h4>Construction 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/edu/4.PNG" title="Construction 1"
-                    data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i
-                      class="bi bi-zoom-in"></i></a>
-                  <a href="" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+                  <h4>Feb Offer: 18 Levels (All Inclusive)</h4>
+                  <p>6666 EGP instead of 11870 EGP · expired 28 Feb 2023</p>
+                  <a href="assets/img/edu/4.PNG" title="Feb Offer: 18 Levels (All Inclusive)" data-gallery="portfolio-gallery-harvest-diploma"
+                    class="glightbox preview-link" aria-label="View Feb Offer: 18 Levels (All Inclusive)"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#get-started" title="Enquire about this course" class="details-link" aria-label="Enquire about Feb Offer: 18 Levels (All Inclusive)"><i
+                      class="bi bi-envelope"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-kids">
               <div class="portfolio-content h-100">
-                <img src="assets/img/edu/60.PNG" class="img-fluid" alt="">
+                <img src="assets/img/edu/60.PNG" class="img-fluid" alt="Kidzy Diploma 1">
                 <div class="portfolio-info">
-                  <h4>Repairs 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/edu/60.PNG" title="Repairs 1" data-gallery="portfolio-gallery-repairs"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+                  <h4>Kidzy Diploma 1</h4>
+                  <p>2200 EGP</p>
+                  <a href="assets/img/edu/60.PNG" title="Kidzy Diploma 1" data-gallery="portfolio-gallery-kids"
+                    class="glightbox preview-link" aria-label="View Kidzy Diploma 1"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#get-started" title="Enquire about this course" class="details-link" aria-label="Enquire about Kidzy Diploma 1"><i
+                      class="bi bi-envelope"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-english-diploma">
               <div class="portfolio-content h-100">
-                <img src="assets/img/edu/5.PNG" class="img-fluid" alt="">
+                <img src="assets/img/edu/5.PNG" class="img-fluid" alt="American Accent Diploma">
                 <div class="portfolio-info">
-                  <h4>Design 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/edu/5.PNG" title="Repairs 1" data-gallery="portfolio-gallery-book"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+                  <h4>American Accent Diploma</h4>
+                  <p>3900 EGP</p>
+                  <a href="assets/img/edu/5.PNG" title="American Accent Diploma" data-gallery="portfolio-gallery-english-diploma"
+                    class="glightbox preview-link" aria-label="View American Accent Diploma"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#get-started" title="Enquire about this course" class="details-link" aria-label="Enquire about American Accent Diploma"><i
+                      class="bi bi-envelope"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-offers">
               <div class="portfolio-content h-100">
-                <img src="assets/img/edu/2.PNG" class="img-fluid" alt="">
+                <img src="assets/img/edu/2.PNG" class="img-fluid" alt="Feb Offer: 6 Levels (Double)">
                 <div class="portfolio-info">
-                  <h4>Remodeling 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/edu/2.PNG" title="Remodeling 2"
-                    data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i
-                      class="bi bi-zoom-in"></i></a>
-                  <a href="" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+                  <h4>Feb Offer: 6 Levels (Double)</h4>
+                  <p>1980 EGP instead of 3390 EGP · expired 28 Feb 2023</p>
+                  <a href="assets/img/edu/2.PNG" title="Feb Offer: 6 Levels (Double)" data-gallery="portfolio-gallery-offers"
+                    class="glightbox preview-link" aria-label="View Feb Offer: 6 Levels (Double)"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#get-started" title="Enquire about this course" class="details-link" aria-label="Enquire about Feb Offer: 6 Levels (Double)"><i
+                      class="bi bi-envelope"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-harvest-diploma">
               <div class="portfolio-content h-100">
-                <img src="assets/img/edu/31.PNG" class="img-fluid" alt="">
+                <img src="assets/img/edu/31.PNG" class="img-fluid" alt="Level by Level">
                 <div class="portfolio-info">
-                  <h4>Construction 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/edu/31.PNG" title="Construction 2"
-                    data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i
-                      class="bi bi-zoom-in"></i></a>
-                  <a href="" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+                  <h4>Level by Level</h4>
+                  <p>490 EGP per level</p>
+                  <a href="assets/img/edu/31.PNG" title="Level by Level" data-gallery="portfolio-gallery-harvest-diploma"
+                    class="glightbox preview-link" aria-label="View Level by Level"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#get-started" title="Enquire about this course" class="details-link" aria-label="Enquire about Level by Level"><i
+                      class="bi bi-envelope"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-kids">
               <div class="portfolio-content h-100">
-                <img src="assets/img/edu/70.PNG" class="img-fluid" alt="">
+                <img src="assets/img/edu/70.PNG" class="img-fluid" alt="Kidzy Diploma 2">
                 <div class="portfolio-info">
-                  <h4>Repairs 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/edu/70.PNG" title="Repairs 2" data-gallery="portfolio-gallery-repairs"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+                  <h4>Kidzy Diploma 2</h4>
+                  <p>2200 EGP</p>
+                  <a href="assets/img/edu/70.PNG" title="Kidzy Diploma 2" data-gallery="portfolio-gallery-kids"
+                    class="glightbox preview-link" aria-label="View Kidzy Diploma 2"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#get-started" title="Enquire about this course" class="details-link" aria-label="Enquire about Kidzy Diploma 2"><i
+                      class="bi bi-envelope"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-english-diploma">
               <div class="portfolio-content h-100">
-                <img src="assets/img/edu/6.PNG" class="img-fluid" alt="">
+                <img src="assets/img/edu/6.PNG" class="img-fluid" alt="TEFL Diploma">
                 <div class="portfolio-info">
-                  <h4>Design 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/edu/6.PNG" title="Repairs 2" data-gallery="portfolio-gallery-book"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+                  <h4>TEFL Diploma</h4>
+                  <p>3200 EGP</p>
+                  <a href="assets/img/edu/6.PNG" title="TEFL Diploma" data-gallery="portfolio-gallery-english-diploma"
+                    class="glightbox preview-link" aria-label="View TEFL Diploma"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#get-started" title="Enquire about this course" class="details-link" aria-label="Enquire about TEFL Diploma"><i
+                      class="bi bi-envelope"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-offers">
               <div class="portfolio-content h-100">
-                <img src="assets/img/edu/3.PNG" class="img-fluid" alt="">
+                <img src="assets/img/edu/3.PNG" class="img-fluid" alt="Feb Offer: True Beginner + 2 Levels">
                 <div class="portfolio-info">
-                  <h4>Remodeling 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/edu/3.PNG" title="Remodeling 3"
-                    data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i
-                      class="bi bi-zoom-in"></i></a>
-                  <a href="" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+                  <h4>Feb Offer: True Beginner + 2 Levels</h4>
+                  <p>1590 EGP instead of 2360 EGP · expired 28 Feb 2023</p>
+                  <a href="assets/img/edu/3.PNG" title="Feb Offer: True Beginner + 2 Levels" data-gallery="portfolio-gallery-offers"
+                    class="glightbox preview-link" aria-label="View Feb Offer: True Beginner + 2 Levels"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#get-started" title="Enquire about this course" class="details-link" aria-label="Enquire about Feb Offer: True Beginner + 2 Levels"><i
+                      class="bi bi-envelope"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-harvest-diploma">
               <div class="portfolio-content h-100">
-                <img src="assets/img/edu/41.PNG" class="img-fluid" alt="">
+                <img src="assets/img/edu/41.PNG" class="img-fluid" alt="True Beginners Diploma">
                 <div class="portfolio-info">
-                  <h4>Construction 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/edu/41.PNG" title="Construction 3"
-                    data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i
-                      class="bi bi-zoom-in"></i></a>
-                  <a href="" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+                  <h4>True Beginners Diploma</h4>
+                  <p>550 EGP</p>
+                  <a href="assets/img/edu/41.PNG" title="True Beginners Diploma" data-gallery="portfolio-gallery-harvest-diploma"
+                    class="glightbox preview-link" aria-label="View True Beginners Diploma"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#get-started" title="Enquire about this course" class="details-link" aria-label="Enquire about True Beginners Diploma"><i
+                      class="bi bi-envelope"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-kids">
               <div class="portfolio-content h-100">
-                <img src="assets/img/edu/80.PNG" class="img-fluid" alt="">
+                <img src="assets/img/edu/80.PNG" class="img-fluid" alt="Mini Diploma (4 Levels)">
                 <div class="portfolio-info">
-                  <h4>Repairs 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/edu/80.PNG" title="Repairs 2" data-gallery="portfolio-gallery-repairs"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+                  <h4>Mini Diploma (4 Levels)</h4>
+                  <p>1960 EGP</p>
+                  <a href="assets/img/edu/80.PNG" title="Mini Diploma (4 Levels)" data-gallery="portfolio-gallery-kids"
+                    class="glightbox preview-link" aria-label="View Mini Diploma (4 Levels)"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#get-started" title="Enquire about this course" class="details-link" aria-label="Enquire about Mini Diploma (4 Levels)"><i
+                      class="bi bi-envelope"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-english-diploma">
               <div class="portfolio-content h-100">
-                <img src="assets/img/edu/7.PNG" class="img-fluid" alt="">
+                <img src="assets/img/edu/7.PNG" class="img-fluid" alt="TOEFL Preparation Course">
                 <div class="portfolio-info">
-                  <h4>Design 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/edu/7.PNG" title="Repairs 3" data-gallery="portfolio-gallery-book"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+                  <h4>TOEFL Preparation Course</h4>
+                  <p>3200 EGP</p>
+                  <a href="assets/img/edu/7.PNG" title="TOEFL Preparation Course" data-gallery="portfolio-gallery-english-diploma"
+                    class="glightbox preview-link" aria-label="View TOEFL Preparation Course"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#get-started" title="Enquire about this course" class="details-link" aria-label="Enquire about TOEFL Preparation Course"><i
+                      class="bi bi-envelope"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
@@ -765,8 +781,7 @@
 
         <div class="section-header">
           <h2 id="Team"> Harvest Team</h2>
-          <p>Quam sed id excepturi ccusantium dolorem ut quis dolores nisi llum nostrum enim velit qui ut et autem uia
-            reprehenderit sunt deleniti</p>
+          <p>Meet the people behind Harvest British College.</p>
         </div>
 
         <div class="slides-2 swiper">
@@ -775,7 +790,7 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/edu/8.PNG" class="testimonial-img" alt="">
+                  <img src="assets/img/edu/8.PNG" class="testimonial-img" alt="Hatem Madah">
                   <h3>Hatem Madah</h3>
                   <h4>Ceo</h4>
                   <div class="stars">
@@ -794,7 +809,7 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/edu/9.PNG" class="testimonial-img" alt="">
+                  <img src="assets/img/edu/9.PNG" class="testimonial-img" alt="Karim Madah">
                   <h3>Karim Madah</h3>
                   <h4>Business Development Manager</h4>
                   <div class="stars">
@@ -813,19 +828,13 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/edu/10.PNG" class="testimonial-img" alt="">
+                  <img src="assets/img/edu/10.PNG" class="testimonial-img" alt="Raghda Ibrahim">
                   <h3>Raghda Ibrahim</h3>
                   <h4>Operation Manager</h4>
                   <div class="stars">
                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                       class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                   </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim
-                    tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
                 </div>
               </div>
             </div><!-- End testimonial item -->
@@ -833,19 +842,13 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/edu/111.PNG" class="testimonial-img" alt="">
+                  <img src="assets/img/edu/111.PNG" class="testimonial-img" alt="Shimaa Mohamed">
                   <h3>Shimaa Mohamed</h3>
                   <h4>Sales Manager</h4>
                   <div class="stars">
                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                       class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                   </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit
-                    minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
                 </div>
               </div>
             </div><!-- End testimonial item -->
@@ -853,7 +856,7 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/edu/13.PNG" class="testimonial-img" alt="">
+                  <img src="assets/img/edu/13.PNG" class="testimonial-img" alt="Hesham Moussa">
                   <h3>Hesham Moussa</h3>
                   <h4>Software Supervisor</h4>
                   <div class="stars">
@@ -884,8 +887,7 @@
     
   <div class=" section-header">
         <h2>Find Us</h2>
-        <!-- <p>In commodi voluptatem excepturi quaerat nihil error autem voluptate ut et officia consequuntu</p> -->
-      </div>
+              </div>
 
       <div class="row gy-5">
 
@@ -893,8 +895,7 @@
           <div class="post-item position-relative h-100">
 
             <div class="post-img position-relative overflow-hidden">
-              <img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt="">
-              <!-- <span class="post-date">December 12</span> -->
+              <img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt="" loading="lazy">
             </div>
 
             <div class="post-content d-flex flex-column bg-black">
@@ -903,22 +904,18 @@
 
               <div class="meta d-flex align-items-center">
                 <div class="d-flex align-items-center">
-                  <i class="bi bi-person "></i> <span class="ps-2 "> <span class="MOBILE"> Mobile :  01020034000</span> </span>
+                  <i class="bi bi-phone"></i> <span class="ps-2 MOBILE">Mobile: 01020034000</span>
                 </div>
                 <span class="px-3 text-black-50">/</span>
                 <div class="d-flex align-items-center">
-                  <i class="bi bi-folder2"></i> <span class="ps-2"> <span class="MOBILE"> Phone :19545</span> </span>
+                  <i class="bi bi-telephone"></i> <span class="ps-2 MOBILE">Hotline: 19545</span>
                 </div>
               </div>
 
               <hr>
 
-              <a href="" class="readmore stretched-link"><span>Read More</span><i
-                  class="bi bi-arrow-right"></i>
-                </a>
-                  <br>
-                  <br>
-                  
+              <a href="tel:19545" class="readmore stretched-link"><span>Call 19545</span><i
+                  class="bi bi-arrow-right"></i></a>
 
             </div>
 
@@ -929,27 +926,22 @@
           <div class="post-item position-relative h-100">
 
             <div class="post-img position-relative overflow-hidden">
-              <img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt="">
-              <!-- <span class="post-date">July 17</span> -->
+              <img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt="" loading="lazy">
             </div>
 
             <div class="post-content d-flex flex-column bg-black">
 
-              <h3 class="post-title">Our Location </h3>
+              <h3 class="post-title">Our Location</h3>
 
               <div class="meta d-flex align-items-center">
                 <div class="d-flex align-items-center">
-                  <i class="bi bi-person"></i> <span class="ps-2 MOBILE"> Villa 4, Dr. Soliman Square, Mossadeq St., Dokki (behind Hardee's),</span>
-                </div>
-                <span class="px-3 text-black-50">/</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-folder2"></i> <span class="ps-2 MOBILE">Giza , Egypt</span>
+                  <i class="bi bi-geo-alt"></i> <span class="ps-2 MOBILE">Villa 4, Dr. Soliman Square, Mossadeq St., Dokki (behind Hardee's), Giza, Egypt</span>
                 </div>
               </div>
 
               <hr>
 
-              <a href="" class="readmore stretched-link"><span>Read More</span><i
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=Harvest+British+College+Dokki+Giza" class="readmore stretched-link" target="_blank" rel="noopener"><span>Open in Google Maps</span><i
                   class="bi bi-arrow-right"></i></a>
 
             </div>
@@ -957,12 +949,11 @@
           </div>
         </div><!-- End post item -->
 
-        <div class="col-xl-4 col-md-6">
-          <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="300">
+        <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="post-item position-relative h-100">
 
             <div class="post-img position-relative overflow-hidden">
-              <img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt="">
-              <!-- <span class="post-date">September 05</span> -->
+              <img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt="" loading="lazy">
             </div>
 
             <div class="post-content d-flex flex-column bg-black">
@@ -971,20 +962,13 @@
 
               <div class="meta d-flex align-items-center">
                 <div class="d-flex align-items-center">
-                  <i class="bi bi-person"></i> <span class="ps-2 MOBILE"> info@harvestcollege.co.uk</span>
+                  <i class="bi bi-envelope"></i> <span class="ps-2 MOBILE">info@harvestcollege.co.uk</span>
                 </div>
-                <span class="px-3 text-black-50">/</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-folder2"></i> <span class="ps-2"></span>
-                </div>
-                <br>
-                <br>
-                <br>
               </div>
 
               <hr>
 
-              <a href="" class="readmore stretched-link"><span>Read More</span><i
+              <a href="mailto:info@harvestcollege.co.uk" class="readmore stretched-link"><span>Send an email</span><i
                   class="bi bi-arrow-right"></i></a>
 
             </div>
@@ -1012,15 +996,15 @@
               <h3 class="HARVEST">Harvest.</h3>
               <p>
                 Villa 4, Dr. Soliman Square, <br> Mossadeq St., Dokki (behind Hardee's),<br> Giza, Giza Governorate, Egypt<br><br>
-                <strong>Phone:</strong> <span class="HARVEST">19545 / 01020034000</span> <br>
-                <strong>Email:</strong> <span class="HARVEST">info@harvestcollege.co.uk</span>
+                <strong>Phone:</strong> <a class="HARVEST" href="tel:19545">19545</a> / <a class="HARVEST" href="tel:+201020034000">01020034000</a> <br>
+                <strong>Email:</strong> <a class="HARVEST" href="mailto:info@harvestcollege.co.uk">info@harvestcollege.co.uk</a>
                 <br>
               </p>
               <div class="social-links d-flex mt-3">
-                <a href="https://www.tiktok.com/@harvestcollege" target="_blank" class="d-flex align-items-center justify-content-center"><i class="bi bi-tiktok"></i></a>
-                <a href="https://www.facebook.com/harvestbritishcollege" target="_blank" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
-                <a href="https://www.instagram.com/harvestcollege/?hl=en" target="_blank" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
-                <a href="https://www.linkedin.com/company/harvest-british-college/mycompany/" target="_blank" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.tiktok.com/@harvestcollege" target="_blank" rel="noopener" aria-label="Harvest British College on TikTok" class="d-flex align-items-center justify-content-center"><i class="bi bi-tiktok"></i></a>
+                <a href="https://www.facebook.com/harvestbritishcollege" target="_blank" rel="noopener" aria-label="Harvest British College on Facebook" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/harvestcollege/?hl=en" target="_blank" rel="noopener" aria-label="Harvest British College on Instagram" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/harvest-british-college/mycompany/" target="_blank" rel="noopener" aria-label="Harvest British College on LinkedIn" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
           </div><!-- End footer info column-->
@@ -1028,36 +1012,30 @@
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Company</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Join us</a></li>
-              <li><a href="#">Our Family</a></li>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#get-started">About us</a></li>
+              <li><a href="#testimonials">Our Team</a></li>
+              <li><a href="#recent-blog-posts">Contact</a></li>
             </ul>
           </div><!-- End footer links column-->
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Programs</h4>
             <ul>
-              <li><a href="#">Offers</a></li>
-              <li><a href="#">Certificates</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Marketing</a></li>
-              <li><a href="#">Placement Test</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#projects">Offers</a></li>
+              <li><a href="#features">Certificates</a></li>
+              <li><a href="#constructions">Curriculum</a></li>
             </ul>
           </div><!-- End footer links column-->
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Support</h4>
             <ul>
-              <li><a href="#">Terms and Conditions</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Company Profile</a></li>
-            
+              <li><a href="#get-started">Send an enquiry</a></li>
+              <li><a href="https://harvestcollege.co.uk/uploads/about/Harvest%20Company%20Profile'2022.pdf" target="_blank" rel="noopener">Company Profile (PDF)</a></li>
             </ul>
           </div><!-- End footer links column-->
-
-         <!-- End footer links column-->
 
         </div>
       </div>
@@ -1069,8 +1047,8 @@
           &copy; Copyright <strong><span class="HARVESTT">Harvest</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
-          Designed by 
-        <span class="HARVESTTT"> Harvest Team</span>  </a>
+          <!-- The BootstrapMade free licence requires this credit to stay in place. -->
+          Designed by <a href="https://bootstrapmade.com/" target="_blank" rel="noopener">BootstrapMade</a>
         </div>
       </div>
     </div>
@@ -1078,7 +1056,7 @@
   </footer>
   <!-- End Footer -->
 
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+  <a href="#hero" aria-label="Back to top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader"></div>  
@@ -1090,7 +1068,6 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

@@ -54,6 +54,7 @@ The second, rebuilt version of the Harvest British College website, which I made
 - [Page sections](#page-sections)
 - [Project structure](#project-structure)
 - [Getting started](#getting-started)
+- [Known limitations](#known-limitations)
 - [Deployment](#deployment)
 - [Author](#author)
 
@@ -71,9 +72,9 @@ HarvestNew replaces the [first version](https://github.com/Eslamraafat1/Harvest)
 | --- | --- | --- |
 | Date | February 2023 | March 2023 |
 | Approach | React 18 single-page app (Create React App), only the production build committed | Static one-page site: plain HTML, CSS and vanilla JavaScript, no build step |
-| Base | React scaffold reused from an earlier project; the landing page lives in the navbar component | Bootstrap 5 one-page template (its section names such as `constructions` and its `php-email-form` script are still in the markup) |
+| Base | React scaffold reused from an earlier project; the landing page lives in the navbar component | [UpConstruction](https://bootstrapmade.com/) one-page template by BootstrapMade (credited in the footer, as its free licence requires; some section ids such as `constructions` are kept from the template) |
 | Content | Course-marketplace layout with placeholder banners and copy | Real Harvest content: about, vision, curriculum, services with prices, Cambridge accreditation, team, address and phone numbers |
-| Interactivity | Bootstrap carousels | Hero carousel, Isotope offer filters, Swiper team slider, AOS scroll animations, GLightbox image previews, enquiry form |
+| Interactivity | Bootstrap carousels | Hero carousel, Isotope offer filters, Swiper team slider, AOS scroll animations, GLightbox image previews, validated enquiry form that opens an email to the college |
 | Source in repo | Build output only | Full, readable source |
 
 ## Features
@@ -84,7 +85,9 @@ HarvestNew replaces the [first version](https://github.com/Eslamraafat1/Harvest)
 - **"Hurry up" offers grid:** filterable with Isotope (All · offers · Harvest Diploma · Kids · English Diploma), showing expiry dates and old vs. new prices. Each card opens a GLightbox preview.
 - **About tabs:** Cambridge Certificate, Our Gallery, Graduation, and Harvest Portfolio & Clients (Bootstrap tabs).
 - **Harvest Team slider** (Swiper) with names and roles.
-- **Find Us** cards (phone, location, email) and a footer with address, phone numbers, email and TikTok, Facebook, Instagram and LinkedIn links.
+- **Enquiry form** with client-side validation (name, email, phone, message). Because GitHub Pages cannot run server code, a valid enquiry opens the visitor's email app addressed to `info@harvestcollege.co.uk`, with the details pre-filled.
+- **Find Us** cards with working links (call 19545, open the address in Google Maps, send an email) and a footer with address, clickable phone numbers and email, and TikTok, Facebook, Instagram and LinkedIn links.
+- **SEO basics:** descriptive title and meta description, canonical URL, Open Graph and Twitter card tags, and `EducationalOrganization` JSON-LD built from the contact details on the page.
 - **Scroll animations** (AOS), a preloader and a scroll-to-top button.
 
 ## Tech stack
@@ -124,7 +127,6 @@ HarvestNew replaces the [first version](https://github.com/Eslamraafat1/Harvest)
 │   │   ├── edu/               # Harvest images (logo, diplomas, offers, team)
 │   │   └── hero-carousel/     # hero slides
 │   └── vendor/                # Bootstrap, Bootstrap Icons, Font Awesome, Swiper, Isotope, AOS, GLightbox, PureCounter
-├── forms/                     # PHP form handlers from the template (not run on GitHub Pages)
 └── docs/screenshots/          # README images
 ```
 
@@ -138,7 +140,14 @@ cd HarvestNew
 npx serve .        # or simply open index.html in a browser
 ```
 
-The enquiry form posts to `forms/quote.php`, which needs a PHP server. On GitHub Pages the form is display-only.
+There is no back end: the enquiry form validates in the browser and then opens a pre-filled email (`mailto:`) to the college.
+
+## Known limitations
+
+- **Snapshot of early 2023 content.** Prices and the February 2023 offers (marked as expired) are shown as the college published them at the time; they are not kept up to date.
+- **No server-side form handling.** The enquiry form relies on the visitor having an email app; the phone numbers are shown next to it as an alternative.
+- **Some copy is the college's own text, kept as written** (for example in the Curriculum and Cambridge Certificate sections).
+- Template naming (`constructions`, `projects`, `recent-blog-posts` section ids and CSS classes) is kept so the BootstrapMade styles keep working.
 
 ## Deployment
 
@@ -155,4 +164,4 @@ Deployed with **GitHub Pages** from the `master` branch: [eslamraafat1.github.io
 
 ---
 
-© Harvest British College. Code shared for portfolio purposes.
+© Harvest British College. Code shared for portfolio purposes. Template: [UpConstruction by BootstrapMade](https://bootstrapmade.com/), used under its free licence with the footer credit kept.

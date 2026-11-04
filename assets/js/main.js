@@ -79,10 +79,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     window.addEventListener('load', togglescrollTop);
     document.addEventListener('scroll', togglescrollTop);
-    scrollTop.addEventListener('click', window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    }));
+    scrollTop.addEventListener('click', (event) => {
+      event.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
   }
 
   /**
@@ -203,5 +206,53 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     aos_init();
   });
+
+  /**
+   * Keyboard support for the icon-only mobile menu toggles
+   */
+  document.querySelectorAll('.mobile-nav-toggle').forEach(el => {
+    el.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        el.click();
+      }
+    });
+  });
+
+  /**
+   * Enquiry form: the site is static (GitHub Pages), so instead of posting to a
+   * server the validated enquiry opens the visitor's email app, addressed to the
+   * college's published address.
+   */
+  const enquiryForm = document.querySelector('#enquiry-form');
+  if (enquiryForm) {
+    const errorBox = enquiryForm.querySelector('.error-message');
+    const sentBox = enquiryForm.querySelector('.sent-message');
+    enquiryForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      errorBox.style.display = 'none';
+      sentBox.style.display = 'none';
+
+      const fields = Array.from(enquiryForm.querySelectorAll('input, textarea'));
+      fields.forEach(field => {
+        field.value = field.value.trim();
+        field.classList.toggle('is-invalid', !field.checkValidity());
+        field.setAttribute('aria-invalid', String(!field.checkValidity()));
+      });
+      const firstInvalid = fields.find(field => !field.checkValidity());
+      if (firstInvalid) {
+        errorBox.textContent = 'Please check the highlighted fields: ' + firstInvalid.placeholder.toLowerCase() + ' - ' + firstInvalid.validationMessage;
+        errorBox.style.display = 'block';
+        firstInvalid.focus();
+        return;
+      }
+
+      const data = new FormData(enquiryForm);
+      const subject = 'Website enquiry from ' + data.get('name');
+      const body = data.get('message') + '\n\nName: ' + data.get('name') + '\nEmail: ' + data.get('email') + '\nPhone: ' + data.get('phone');
+      window.location.href = 'mailto:info@harvestcollege.co.uk?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      sentBox.style.display = 'block';
+    });
+  }
 
 });
